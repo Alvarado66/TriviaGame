@@ -1,0 +1,11 @@
+.jumbotron {
+    background-color: goldenrod;
+    color: #800020;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.btn-primary {
+    background-color: #800020;
+}
+
