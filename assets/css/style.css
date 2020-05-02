@@ -17,3 +17,9 @@ body {
     margin: auto
     
 }
+
+#theTimer {
+    text-align: center;
+    background-color: goldenrod;
+    margin: -150px solid #800020;
+}

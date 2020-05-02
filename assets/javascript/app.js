@@ -9,9 +9,19 @@ $(document).ready(function() {
     const theResults = document.getElementById('results');
     const toSubmit = document.getElementById('submit');
 
-    let timer = setInterval(function()) {
-
-        let 
+    var remainingTime = 120;
+    var time = document.getElementById('theTimer');
+    
+    var countDown = setInterval(countdown, 1000);
+    
+    function countdown() {
+    if (remainingTime == 0) {
+        clearTimeout(countDown);
+        doSomething();
+    } else {
+        time.innerHTML = remainingTime;
+        remainingTime--;
+    }
     }
 
     const questions = [
