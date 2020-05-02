@@ -3,6 +3,12 @@ $(document).ready(function() {
             console.log("it worked")
             $(this).hide();
             })
+            
+
+    const quizContainer = document.getElementById('quiz');
+    const theResults = document.getElementById('results');
+    const toSubmit = document.getElementById('submit');
+
 
     const questions = [
     {
@@ -46,26 +52,25 @@ $(document).ready(function() {
         correctAnswer: "c"
     },
     {
-        question: "What is the correct platform to get on the train?",
+        question: "Who rightfully owned Dumboldore's wand after he died?",
         answers: {
-            a: "Platform 1 1/2",
-            b: "Platform 9 3/4",
-            c: "Platform 9 4/3",
-            d: "Platform 4 3/9"
+            a: "Malfoy",
+            b: "Snape",
+            c: "Lord Voldemort",
+            d: "Lucious"
         },
-        correctAnswer: "c"
+        correctAnswer: "a"
     },
     {
-        question: "What is the correct platform to get on the train?",
+        question: "Who did Harry marry at the end?",
         answers: {
-            a: "Platform 1 1/2",
-            b: "Platform 9 3/4",
-            c: "Platform 9 4/3",
-            d: "Platform 4 3/9"
+            a: "Hermione",
+            b: "Luna",
+            c: "Ginny",
+            d: "Cho"
         },
         correctAnswer: "c"
     },
-    
 ]
 
 
