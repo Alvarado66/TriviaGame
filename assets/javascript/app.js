@@ -67,6 +67,10 @@ $(document).ready(function() {
     const theResults = $('#results');
     const toSubmit = $('#submit');
 
+    let amtCorrect = 0;
+    let amtWrong = 0;
+    let  
+
 
     $('#toReset').hide()
 
@@ -74,7 +78,7 @@ $(document).ready(function() {
             console.log("it worked")
             $(this).hide();
 
-            var remainingTime = 4;
+            var remainingTime = 120;
             
 
             var countDown = setInterval(function(){
@@ -95,7 +99,19 @@ $(document).ready(function() {
             let qDiv = $("<div>");
             let q = $("<h5>").text(questions[i].question)
             qDiv.append(q)
-            let firstAns = $('<p>').html(questions[i].answers)
+            
+            let firstAns = $('<p>').html( '<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[0]+' </label><br>' )
+            let secondAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[1]+' </label><br>')
+            let thirdAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[2]+' </label><br>')
+            let fourthAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[3]+' </label><br>')
+            
+
+
+            qDiv.append(firstAns)
+            qDiv.append(secondAns)
+            qDiv.append(thirdAns)
+            qDiv.append(fourthAns)
+
             quizContainer.append(qDiv)
         }    
     })
