@@ -5,7 +5,15 @@
     font-size: x-large;
 }
 
-.btn-primary {
+#startGame {
     background-color: #800020;
+    color: white;
 }
 
+
+body {
+    background-image: url('../images/harry-potter-hogwarts-illustrated_a-G-15745040-0.jpg');
+    
+    margin: auto
+    
+}
