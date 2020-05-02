@@ -3,12 +3,16 @@ $(document).ready(function() {
             console.log("it worked")
             $(this).hide();
             })
-            
+
 
     const quizContainer = document.getElementById('quiz');
     const theResults = document.getElementById('results');
     const toSubmit = document.getElementById('submit');
 
+    let timer = setInterval(function()) {
+
+        let 
+    }
 
     const questions = [
     {
