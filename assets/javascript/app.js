@@ -102,7 +102,7 @@ $(document).ready(function() {
             let q = $("<h5>").text(questions[i].question)
             qDiv.append(q)
             
-            let firstAns = $('<p>').html( '<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[0]+' </label><br>' )
+            let firstAns = $('<p>').html( '<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[0]+' </label><br>')
             let secondAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[1]+' </label><br>')
             let thirdAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[2]+' </label><br>')
             let fourthAns = $('<p>').html('<input name=" '+questions[i].correctAnswer+' " type="radio"><label>'+ questions[i].answers[3]+' </label><br>')
@@ -118,15 +118,15 @@ $(document).ready(function() {
         }    
     })
 
+function checkAns(){
+    $('#')
+}
+
     function scoreSheet () {
         $('quizContainer').hide()
         $('#theTimer').hide()
         $('#toReset').show()
     }
-
-
-
-
 
 
 });
