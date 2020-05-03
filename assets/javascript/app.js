@@ -71,12 +71,14 @@ $(document).ready(function() {
     let amtWrong = 0;
     let usrScore =0; 
 
-    
-    $('#toReset').hide()
+    $('#quizContainer').hide();
+    $('#toReset').hide();
 
     $('#startGame').on("click", function startGame() {
             
             $(this).hide();
+
+            $('#quizContainer').show();
 
             var remainingTime = 121;
             
@@ -117,7 +119,7 @@ $(document).ready(function() {
     })
 
     function scoreSheet () {
-        quizContainer.hide()
+        $('quizContainer').hide()
         $('#theTimer').hide()
         $('#toReset').show()
     }
