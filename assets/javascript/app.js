@@ -69,16 +69,16 @@ $(document).ready(function() {
 
     let amtCorrect = 0;
     let amtWrong = 0;
-    let  
+    let usrScore =0; 
 
-
+    
     $('#toReset').hide()
 
     $('#startGame').on("click", function startGame() {
-            console.log("it worked")
+            
             $(this).hide();
 
-            var remainingTime = 120;
+            var remainingTime = 121;
             
 
             var countDown = setInterval(function(){

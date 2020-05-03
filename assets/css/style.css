@@ -3,6 +3,7 @@
     color: #800020;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
+    border: 15px solid maroon;
 }
 
 #startGame {
@@ -14,12 +15,29 @@
 body {
     background-image: url('../images/harry-potter-hogwarts-illustrated_a-G-15745040-0.jpg');
     
-    margin: auto
-    
+    width: auto;
+    border: 15px solid maroon;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.timerBox {
+    width: 300px;
+    border: 15px solid maroon;
+    padding: 50px;
+    margin-left: 600px;
+}
 #theTimer {
     text-align: center;
     background-color: goldenrod;
-    margin: -150px solid #800020;
+
+
 }
+
+#quizContainer {
+    background-color: goldenrod;
+    color: maroon;
+    border: 15px solid maroon;
+
+}
+
